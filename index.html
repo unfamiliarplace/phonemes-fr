@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Phonèmes du français</title>
+  <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
+<link rel='stylesheet' href='https://t.sawczak.com/common/assets/fonts/pm/pm64-redux.css'><link rel="stylesheet" href="./style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='app'>
+  <div id='mainPanel'>
+    <div id='gamePanel' class='fullPanel'>
+      <div id='titlePanel'>
+        <h1 id='title'>Les phonèmes du français</h1>
+      </div>
+      <div id='focusPanel' class='flexRow'>
+
+      </div>
+    </div>
+    <div id="helpPanel" class="hide fullPanel verticalPanel overlayPanel">
+      <div id="helpContent" class="panelContent">
+        <h1>Help</h1>
+        <hr />
+        <p>This is a little tool intended to make learning French phonemes easier.</p>
+        <p>A phoneme is essentially a unique sound, the smallest unit of language that can change the meaning of a word. Note that a phoneme is something oral, not written. Letters correspond to phonemes, but usually very roughly and inconsistently. Learning the phonemes of a language helps to identify what one hears and know how it might be spelled, as well as to read aloud and produce the correct sound.</p>
+        <p>The phonemes are grouped by their major articulation type. Each phoneme is shown using its symbol in the International Phonetic Alphabet (<a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" title="Wikipedia on the International Phonetic Alphabet">IPA</a>). It's also paired with its most common / familiar grapheme (letter or group of letters that correspond to it), illustrated by a familiar word and image. On the right are additional common graphemes.</p>
+        <p>The faces shown at bottom right represent the articulation involved in making the sound. The main things to notice are the lip shape (rounded or square), the openness of the mouth (more open means the tongue is lower in the mouth), the vibration of the vocal cords for consonants, and the movement of air through the nose for the nasal sounds.</p>
+        <p>The Wikipedia link lets you read more about each sound. You can also read more generally about IPA symbols <a href="https://en.wikipedia.org/wiki/Help:IPA/French" title="Wikipedia on French IPA">here</a> and French phonology in general <a href="https://en.wikipedia.org/wiki/French_phonology" title="Wikipedia on French phonology">here</a>.</p>
+        <p>Every sound also has some notes, mostly tips on articulation and comparisons to English sounds. Hover over "Notes" to reveal them.</p>
+        <p>For the phonemes and words, over 500 samples have been selected from talented students. Sometimes these represent a range of accents and minor variations possible in the realization of the sounds. For an authoritative version, you can also use the Wikipedia pronunciation using the small play button by the Wiki link on each card.</p>
+        <p>Credit for clipart, overall design, and inspiration for the words must be given to For French Immersion.</p>
+      </div>
+    </div>
+  </div>
+  <div id='footer'>
+    <div id='footerContent'>
+      <div class='footerBlock' id='footerLeft'>
+        <div id='helpButtonContainer'>
+          <button id='btnHelp' class='buttonBase buttonEffects buttonFooter' title='Show/hide help panel'>Help</button>
+        </div>
+
+        <div id='mmButtonContainer'>
+          <label for='mMode' class='footerOptionLabel secret' id='labelMMode'>
+
+            <input type='checkbox' class='' id='mMode' />
+            <span class='checkmark'></span>
+            Michael Mode
+          </label>
+        </div>
+      </div>
+      <div class='footerBlock' id='footerRight'>
+        <div id="copyrightContainer">
+          <div id="copyright">© 2025 <a href="https://sawczak.com" title="sawczak.com">Luke Sawczak</a> w/ a nod to to For French Immersion</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://g.sawczak.com/web-tools/js/app-tools.js'></script>
+<script src='https://g.sawczak.com/web-tools/js/jquery-ui-options.js'></script><script  src="./script.js"></script>
+<script src='https://t.sawczak.com/phonemes/includes/phonemes.js'></script>
+
+</body>
+</html>
